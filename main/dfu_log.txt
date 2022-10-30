@@ -1,0 +1,47 @@
+========== OK ==========
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_PING
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<debug> nrf_dfu_serial: Sending Response: [0x9, 0x1]
+<debug> app: Shutting down transports (found: 1)
+<info> nrf_dfu_serial_uart: Allocated buffer 20001760
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_CREATE (command)
+<debug> app: timer_stop (0x20000014)
+<debug> app: timer_activate (0x20000014)
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<debug> nrf_dfu_serial: Sending Response: [0x1, 0x1]
+<error> nrf_dfu_serial: Failed to send data over serial interface!
+<info> nrf_dfu_serial_uart: Allocated buffer 200017E4
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_WRITE (command)
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<info> nrf_dfu_serial_uart: Allocated buffer 20001760
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_WRITE (command)
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<info> nrf_dfu_serial_uart: Allocated buffer 200017E4
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_WRITE (command)
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<info> nrf_dfu_serial_uart: Allocated buffer 200017E4
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_CRC_GET (command)
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<debug> nrf_dfu_serial: Sending Response: [0x3, 0x1]
+<error> nrf_dfu_serial: Failed to send data over serial interface!
+<info> nrf_dfu_serial_uart: Allocated buffer 200017E4
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_EXECUTE (command)
+<debug> nrf_dfu_validation: PB: Init packet data len: 62
+<info> nrf_dfu_validation: Signature required. Checking signature.
+<info> nrf_dfu_validation: Calculating hash (len: 62)
+<info> nrf_dfu_validation: Verify signature
+<info> nrf_dfu_validation: Image verified
+========== NG ==========
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_CREATE (data)
+<debug> nrf_dfu_flash: nrf_fstorage_erase(addr=0x0x00001000, len=1 pages), queue usage: 1
+<debug> nrf_dfu_flash: Flash erase success: addr=0x00001000, pending 0
+<debug> nrf_dfu_req_handler: Creating object with size: 2212. Offset: 0x00000000, CRC: 0x00000000
+<debug> nrf_dfu_req_handler: Request handling complete. Result: 0x1
+<debug> nrf_dfu_serial: Sending Response: [0x1, 0x1]
+<error> nrf_dfu_serial: Failed to send data over serial interface!
+<info> nrf_dfu_serial_uart: Allocated buffer 20001760
+<debug> nrf_dfu_req_handler: Handle NRF_DFU_OP_OBJECT_WRITE (data)
+<debug> nrf_dfu_flash: nrf_fstorage_write(addr=0x00001000, src=0x200017E8, len=62 bytes), queue usage: 1
+<error> app: Received a fault! id: 0x00004002, pc: 0x00000000, info: 0x2000FF40
+<info> nrf_dfu_serial_uart: Allocated buffer 20001868
+<error> nrf_dfu_serial_uart: Failed to allocate buffer
